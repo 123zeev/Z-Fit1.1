@@ -122,6 +122,15 @@
     <Compile Include="ArticlesPage.xaml.cs">
       <DependentUpon>ArticlesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BlankPage1.xaml.cs">
+      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage2.xaml.cs">
+      <DependentUpon>BlankPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GudgetsPage.xaml.cs">
+      <DependentUpon>GudgetsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -149,6 +158,18 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="ArticlesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlankPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GudgetsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
