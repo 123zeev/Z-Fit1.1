@@ -26,5 +26,30 @@ namespace Z_fit1._0
         {
             this.InitializeComponent();
         }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StopButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RoundButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StartButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

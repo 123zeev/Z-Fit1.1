@@ -26,5 +26,25 @@ namespace Z_fit1._0
         {
             this.InitializeComponent();
         }
+
+        private void HomePageButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Videosbutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ArticlesButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void FeaturesAndGudgetsButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
