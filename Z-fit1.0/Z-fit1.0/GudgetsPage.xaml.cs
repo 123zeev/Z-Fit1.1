@@ -22,29 +22,54 @@ namespace Z_fit1._0
     /// </summary>
     public sealed partial class GudgetsPage : Page
     {
+        static int count = 0;
+        DispatcherTimer timer = new DispatcherTimer();
         public GudgetsPage()
         {
             this.InitializeComponent();
+            BuildTimer();
+        }
+
+        private void BuildTimer()
+        {
+            MinuteTextBlock.Text = "00";
+            SecondsTextBlock.Text = "00";
+            CentiSecTextBlock.Text = "00";
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 1);
+            timer.Tick += Timer_Tick;
+        }
+
+        private void Timer_Tick(object sender, object e)
+        {
+            // your homework
         }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-
+            timer.Stop();
+            BuildTimer();
         }
 
         private void StopButton_Click(object sender, RoutedEventArgs e)
         {
-
+            timer.Stop();
         }
 
         private void RoundButton_Click(object sender, RoutedEventArgs e)
         {
-
+            count++;
+            string roundTime = "";
+            roundTime += MinuteTextBlock.Text + ":";
+            roundTime += SecondsTextBlock.Text + ":";
+            roundTime += CentiSecTextBlock.Text;
+            TextBox t = new TextBox();
+            t.Text = count.ToString() + " " + roundTime;
+            MyResultsStackPanel.Children.Add(t);
         }
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-
+            timer.Start();
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)

@@ -58,5 +58,13 @@
                         Name="ResetButton" Click="ResetButton_Click" Width="70"/>
             </Grid>
         </Grid>
+        <ScrollViewer Visibility="Visible" VerticalScrollBarVisibility="Visible"
+                      Grid.Row="1" Grid.Column="1">
+            <StackPanel >
+                <TextBlock Text="תוצאות הקפה" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel Name="MyResultsStackPanel"/>
+            </StackPanel>
+        </ScrollViewer>
+
     </Grid>
 </Page>

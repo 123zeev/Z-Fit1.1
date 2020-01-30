@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyToolkit.Multimedia;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,21 @@ namespace Z_fit1._0
         public HomePage()
         {
             this.InitializeComponent();
+        }
+
+        private async void PlayButtun_Click(object sender, RoutedEventArgs e)
+        {
+            string YouTubeId = @"https://www.youtube.com/watch?v=CJXT76sdF6o&pbjreload=10";
+            try
+            {
+                YouTubeUri url = await YouTube.GetVideoUriAsync(YouTubeId, YouTubeQuality.Quality360P);
+                MediaElt.Source = url.Uri;
+                MediaElt.Play();
+            }
+            catch (Exception )
+            {
+                //throw;
+            }
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Z_fit1._0
 
         private void HomePageButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(HomePage));
         }
 
         private void Videosbutton_Click(object sender, RoutedEventArgs e)
@@ -44,7 +44,7 @@ namespace Z_fit1._0
 
         private void FeaturesAndGudgetsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(GudgetsPage));
         }
     }
 }
